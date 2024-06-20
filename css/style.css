@@ -2,6 +2,43 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: rgb(235, 176, 80);
+  font-size: 16pt;
+  scrollbar-width: none;
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  font-size: 1.5em;
+  background: black;
 }
+nav li {
+  margin: 0 1em;
+  color: white;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.current {
+  color: rgb(235, 176, 80);
+}
+.h1 {
+  font-size: 5em;
+}
+div {
+  margin: auto;
+}
+img {
+  height: 20em;
+}
+
+/* colors */
+/* rgb(235,176,80) */
