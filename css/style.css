@@ -42,3 +42,10 @@ img {
 
 /* colors */
 /* rgb(235,176,80) */
+
+@media screen and (max-width: 430px) {
+  /* this doesnt currently work */
+  nav {
+    font-size: 1em;
+  }
+}
