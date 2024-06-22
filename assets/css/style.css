@@ -4,6 +4,7 @@
 
 html {
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -41,7 +42,7 @@ header {
 }
 .top-bar {
   width: 100%;
-  position: fixed;
+  position: absolute;
   clear: both;
   /* border: solid thin rgb(139, 35, 50);
   border-bottom: none; */
@@ -154,8 +155,14 @@ main {
   justify-content: center;
   text-align: center;
 }
+#holy-benedicts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .section-division {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 main h3 {
   font-family: 'Lemonada';
@@ -189,6 +196,7 @@ main li {
 }
 .side {
   font-size: 1em;
+  margin-bottom: 0.5em;
 }
 main h4 {
   font-size: 1.25em;
