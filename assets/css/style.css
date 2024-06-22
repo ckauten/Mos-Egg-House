@@ -224,7 +224,7 @@ main .price {
 
 @media screen and (max-width: 680px) {
   nav {
-    font-size: 1em; /* Confirmed size reduction for smaller screens */
+    font-size: 1em;
   }
   nav ul {
     padding: 0em;
@@ -265,5 +265,8 @@ main .price {
     text-decoration: none;
     transition: color 0.3s, background-color 0.3s;
     white-space: nowrap;
+  }
+  main .sub-fruit {
+    margin-bottom: 2em;
   }
 }
