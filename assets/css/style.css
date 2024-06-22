@@ -151,6 +151,7 @@ main {
   justify-content: center;
   text-align: center;
 }
+
 #omelettes {
   display: flex;
   flex-direction: column;
@@ -193,6 +194,7 @@ main ul {
 
 main li {
   width: 35%;
+  /* border-bottom: thin solid rgb(139, 35, 50); */
 }
 .menu-buttons {
   width: auto;
