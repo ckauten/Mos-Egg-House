@@ -97,15 +97,65 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 11em; /* margin-top: 200px;  */
-  border: solid thin rgb(139, 35, 50);
+  margin-top: 11em;
   margin-bottom: 1em;
 }
-.eggs-and-more {
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.menu-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  max-width: 60em;
+  flex-wrap: nowrap;
+}
+
+.menu-nav ul li {
+  text-align: center;
+  margin: 0 1em;
+  border-radius: 1em;
+  background: linear-gradient(145deg, rgba(139, 35, 50, 0.85), rgba(139, 35, 50, 0.6));
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.menu-nav ul li:hover {
+  background: linear-gradient(145deg, rgba(139, 35, 50, 0.95), rgba(139, 35, 50, 0.7));
+}
+
+.menu-nav ul li a:hover {
+  color: rgb(255, 215, 0);
+}
+
+#eggs-and-more {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+#omelettes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section-division {
+  margin-bottom: 2em;
 }
 main h3 {
   font-family: 'Lemonada';
@@ -114,7 +164,6 @@ main h3 {
   font-size: 2em;
   color: rgb(190, 23, 48);
   text-decoration: underline;
-  /* margin-bottom: 1em; */
 }
 main .sub-fruit {
   margin-bottom: 1em;
@@ -133,9 +182,12 @@ main ul {
 }
 
 main li {
-  width: 40%;
+  width: 35%;
 }
-.with-potatoes {
+.menu-buttons {
+  width: auto;
+}
+.side {
   font-size: 1em;
 }
 main h4 {
@@ -147,7 +199,7 @@ main .price {
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 680px) {
   nav {
     font-size: 1em; /* Confirmed size reduction for smaller screens */
   }
@@ -160,11 +212,35 @@ main .price {
   }
   main li {
     width: 90%;
+    margin-bottom: 1em;
   }
   .header-button {
     display: none;
   }
   main {
     margin-top: 10em;
+  }
+  .menu-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    padding: 0;
+    margin: 0;
+  }
+  .menu-nav ul li {
+    display: inline-block; /* Ensures items stay in line */
+    white-space: normal;
+  }
+  .menu-nav ul li a {
+    padding: 0.5em 1em;
+    color: rgb(248, 248, 248);
+    font-weight: 500;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
   }
 }
