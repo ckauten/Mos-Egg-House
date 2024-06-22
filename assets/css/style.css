@@ -91,6 +91,7 @@ a {
 
 .current {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 main {
@@ -168,7 +169,7 @@ main h3 {
   font-family: 'Lemonada';
   text-align: center;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 3em;
   color: rgb(190, 23, 48);
   text-decoration: underline;
 }
@@ -208,6 +209,17 @@ main p {
 main .price {
   margin-bottom: 1em;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1680px) {
+  main h3 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main h3 {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 680px) {
