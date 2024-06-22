@@ -41,7 +41,7 @@ header {
   overflow: hidden;
 }
 .top-bar {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   clear: both;
   /* border: solid thin rgb(139, 35, 50);
