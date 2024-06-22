@@ -200,11 +200,14 @@ main li {
 }
 main h4 {
   font-size: 1.25em;
+  font-weight: 800;
 }
 main p {
+  font-weight: 500;
 }
 main .price {
   margin-bottom: 1em;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 680px) {
