@@ -6,6 +6,7 @@ html {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -164,6 +165,7 @@ main {
 }
 .section-division {
   margin-bottom: 3em;
+  border-bottom: thin solid rgb(139, 35, 50);
 }
 main h3 {
   font-family: 'Lemonada';
