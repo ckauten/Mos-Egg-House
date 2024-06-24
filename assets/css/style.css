@@ -112,11 +112,16 @@ main {
 .menu-nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
   list-style: none;
   max-width: 60em;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border: solid thin rgb(139, 35, 50);
+  border-radius: 1em;
+  padding: 0.5em 0.25em;
 }
 
 .menu-nav ul li {
@@ -125,6 +130,7 @@ main {
   border-radius: 1em;
   background: linear-gradient(145deg, rgba(139, 35, 50, 0.85), rgba(139, 35, 50, 0.6));
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
 }
 
 .menu-nav ul li a {
@@ -145,20 +151,20 @@ main {
   color: rgb(255, 215, 0);
 }
 
-#eggs-and-more {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#omelettes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-#holy-benedicts {
+#eggs-and-more,
+#omelettes,
+#holy-benedicts,
+#mos-specials,
+#early-risers,
+#pancakes-waffles-french-toast,
+#kids-menu,
+#continental-breakfast,
+#side-orders,
+#burgers-sandwiches,
+#specialty-sandwiches,
+#salads-n-soup,
+#lite-lunch,
+#beverages {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,9 +182,12 @@ main h3 {
   color: rgb(190, 23, 48);
   text-decoration: underline;
 }
-main .sub-fruit {
+main .substitution {
   margin-bottom: 1em;
   color: rgb(190, 23, 48);
+}
+.substitution.kids {
+  margin-bottom: 0.5em;
 }
 
 main ul {
@@ -193,15 +202,25 @@ main ul {
 }
 
 main li {
-  width: 35%;
+  width: 33%;
   /* border-bottom: thin solid rgb(139, 35, 50); */
+  margin: 0 1em;
 }
 .menu-buttons {
   width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
 }
 .side {
   font-size: 1em;
   margin-bottom: 0.5em;
+  /* display: flex;
+  justify-content: center; */
 }
 main h4 {
   font-size: 1.25em;
@@ -209,6 +228,9 @@ main h4 {
 }
 main p {
   font-weight: 500;
+}
+li h4 p {
+  max-width: 20em;
 }
 main .price {
   margin-bottom: 1em;
@@ -223,6 +245,30 @@ main .price {
 @media screen and (max-width: 1000px) {
   main h3 {
     font-size: 2em;
+  }
+  .menu-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .menu-nav ul li {
+    display: inline-block; /* Ensures items stay in line */
+    white-space: normal;
+  }
+  .menu-nav ul li a {
+    padding: 0.5em 1em;
+    color: rgb(248, 248, 248);
+    font-weight: 500;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
   }
 }
 
@@ -270,7 +316,10 @@ main .price {
     transition: color 0.3s, background-color 0.3s;
     white-space: nowrap;
   }
-  main .sub-fruit {
+  main .substitution {
     margin-bottom: 2em;
+  }
+  .substitution.kids {
+    margin-bottom: 0.5em;
   }
 }
