@@ -109,6 +109,20 @@ main {
   flex-direction: row;
   margin-bottom: 1em;
 }
+/* .menu-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  max-width: 60em;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border: solid thin rgb(139, 35, 50);
+  border-radius: 1em;
+  padding: 0.5em 0.25em;
+  background: rgba(0, 0, 0, 0.2);
+} */
 .menu-nav ul {
   display: flex;
   flex-direction: row;
@@ -118,10 +132,12 @@ main {
   max-width: 60em;
   flex-wrap: nowrap;
   overflow-x: auto;
-  scrollbar-width: none;
   border: solid thin rgb(139, 35, 50);
   border-radius: 1em;
   padding: 0.5em 0.25em;
+  background: rgba(0, 0, 0, 0.2);
+  /* scrollbar-width: thick; */
+  scrollbar-color: rgba(139, 35, 50, 0.7) rgba(0, 0, 0, 0);
 }
 
 .menu-nav ul li {
@@ -145,6 +161,7 @@ main {
 
 .menu-nav ul li:hover {
   background: linear-gradient(145deg, rgba(139, 35, 50, 0.95), rgba(139, 35, 50, 0.7));
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .menu-nav ul li a:hover {
@@ -235,6 +252,19 @@ li h4 p {
 main .price {
   margin-bottom: 1em;
   font-weight: 400;
+}
+
+#dropdown-toggle {
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
+  position: relative;
+  padding-left: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+}
+#dropdown-toggle:hover {
+  color: rgb(139, 35, 50);
 }
 
 @media screen and (max-width: 1680px) {
