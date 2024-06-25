@@ -10,9 +10,20 @@ html {
 * {
   box-sizing: border-box;
 }
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: url('https://wallpapers.com/images/hd/paper-texture-background-zlvqcgwohwvd642j.jpg') repeat center
+    center/cover;
+  filter: brightness(75%);
+  opacity: 0.5;
+  z-index: -1;
+}
 body {
-  /* border-left: thin solid rgb(139, 35, 50); */
-  /* border-right: thin solid rgb(139, 35, 50); */
   background: rgb(235, 176, 80);
   font-size: 16pt;
   height: 100vh;
@@ -22,6 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto';
+  z-index: 1;
 }
 #logo {
   height: 15em;
@@ -52,7 +64,7 @@ header {
 }
 
 .header-button {
-  border: thin solid rgb(139, 35, 50);
+  /* border: thin solid rgb(139, 35, 50); */
   padding: 1em;
 }
 
@@ -267,6 +279,17 @@ main .price {
   color: white;
 }
 
+/* #paper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  margin: auto;
+  color: white;
+  background: url('../photos/paper.jpg');
+  opacity: 1;
+} */
+
 @media screen and (max-width: 1680px) {
   main h3 {
     font-size: 2.5em;
@@ -299,6 +322,11 @@ main .price {
     text-decoration: none;
     transition: color 0.3s, background-color 0.3s;
     white-space: nowrap;
+  }
+}
+@media screen and (max-width: 875px) {
+  .header-button {
+    display: none;
   }
 }
 
