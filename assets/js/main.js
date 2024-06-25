@@ -59,3 +59,7 @@ if (currentPage.endsWith('menu.html') || currentPage.endsWith('menu')) {
     });
   });
 }
+
+function goHome() {
+  window.location.href = '/';
+}
