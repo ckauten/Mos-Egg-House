@@ -4,7 +4,7 @@ const menuButtons = document.querySelectorAll('.menu-buttons');
 const currentPage = window.location.pathname;
 
 //Menu Page JS
-if (currentPage.endsWith('menu.html')) {
+if (currentPage.endsWith('menu.html') || currentPage.endsWith('menu')) {
   dropdownToggle.addEventListener('click', function () {
     if (dropdownToggle.classList.contains('show')) {
       dropdownToggle.classList.remove('show');
