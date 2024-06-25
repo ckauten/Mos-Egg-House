@@ -1,6 +1,6 @@
 const dropdownToggle = document.querySelector('#dropdown-toggle');
 const navUL = document.querySelector('#navUL');
-const menuButtons = document.querySelector('#menu-buttons');
+const menuButtons = document.querySelectorAll('.menu-buttons');
 
 dropdownToggle.addEventListener('click', function () {
   if (dropdownToggle.classList.contains('show')) {
@@ -22,8 +22,35 @@ dropdownToggle.addEventListener('click', function () {
       navUL.style.flexWrap = 'nowrap';
     } else {
       navUL.style.flexWrap = 'wrap';
-      navUL.style.overflowX = 'none';
-      menuButtons.marginBottom = '1em';
+      navUL.style.overflowX = 'hidden';
+      menuButtons.forEach((button) => {
+        button.style.marginBottom = '1em';
+      });
     }
   }
+});
+
+//return to top button
+document.addEventListener('DOMContentLoaded', () => {
+  const hiddenElement = document.getElementById('return-to-top');
+
+  function checkScroll() {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (scrollPosition > 200) {
+      hiddenElement.style.display = 'block';
+    } else {
+      hiddenElement.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('resize', checkScroll);
+
+  hiddenElement.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
 });

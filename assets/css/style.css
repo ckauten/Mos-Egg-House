@@ -254,6 +254,18 @@ main .price {
 #dropdown-toggle:hover {
   color: rgb(139, 35, 50);
 }
+#return-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+}
 
 @media screen and (max-width: 1680px) {
   main h3 {
@@ -268,14 +280,14 @@ main .price {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    overflow-x: auto; /* Allows horizontal scrolling */
-    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    overflow-x: auto;
+    white-space: nowrap;
     padding: 0;
     margin: 0;
     border: none;
   }
   .menu-nav ul li {
-    display: inline-block; /* Ensures items stay in line */
+    display: inline-block;
     white-space: normal;
   }
   .menu-nav ul li a {
