@@ -279,16 +279,36 @@ main .price {
   color: white;
 }
 
-/* #paper {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
-  margin: auto;
+#about-main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#about-main p {
+  max-width: 50em;
+  margin: 1em 0;
+}
+#slideshow {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+#slideshow img {
+  border-radius: 1em;
+}
+.mySlides {
+  height: 20em;
+  width: auto;
+  max-width: 40em;
+}
+.w3-button {
+  border-radius: 0.25em;
+  max-height: 2em;
+  margin: auto 0.5em;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  background: url('../photos/paper.jpg');
-  opacity: 1;
-} */
+}
 
 @media screen and (max-width: 1680px) {
   main h3 {
