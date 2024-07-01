@@ -289,25 +289,177 @@ main .price {
   margin: 1em 0;
 }
 #slideshow {
-  overflow: hidden;
+  width: 60%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 #slideshow img {
   border-radius: 1em;
 }
 .mySlides {
-  height: 20em;
-  width: auto;
-  max-width: 40em;
+  max-width: 100%;
+  height: auto;
+  display: none;
 }
 .w3-button {
-  border-radius: 0.25em;
-  max-height: 2em;
-  margin: auto 0.5em;
-  width: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  z-index: 2;
+}
+.w3-button.w3-display-left {
+  left: 10px;
+}
+
+.w3-button.w3-display-right {
+  right: 10px;
+}
+#contact-main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* contact form styling */
+/* reset */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1em;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type='text'],
+#fs-frm [type='email'] {
+  width: 100%;
+}
+#fs-frm [type='button'],
+#fs-frm [type='submit'],
+#fs-frm [type='reset'] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  margin: 1em auto;
+  border-radius: 1em;
+}
+#fs-frm [type='submit']:hover {
+  background-color: rgb(139, 35, 50);
+  color: white;
+}
+#fs-frm [type='button']:focus,
+#fs-frm [type='submit']:focus,
+#fs-frm [type='reset']:focus {
+  outline: none;
+}
+#fs-frm [type='submit'],
+#fs-frm [type='reset'] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type='checkbox'] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 0.5em 0 0 !important;
+}
+
+#fs-frm [type='radio'] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name='city'],
+#fs-frm fieldset.locale select[name='state'],
+#fs-frm fieldset.locale input[name='postal-code'] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name='city'] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name='state'],
+#fs-frm fieldset.locale input[name='postal-code'] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name='city'],
+#fs-frm fieldset.locale select[name='state'] {
+  margin-right: 3%;
+}
+form {
+  /* border: solid thin red; */
+  width: 40em;
+  border-radius: 1em;
+}
+#contact-info {
+  margin-top: 3em;
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  color: white;
+  border: solid thin #3b5998;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1680px) {
@@ -316,6 +468,9 @@ main .price {
   }
 }
 @media screen and (max-width: 1000px) {
+  .mySlides {
+    width: 100%;
+  }
   main h3 {
     font-size: 2em;
   }
@@ -344,9 +499,19 @@ main .price {
     white-space: nowrap;
   }
 }
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 880px) {
   .header-button {
     display: none;
+  }
+  form {
+    /* border: solid thin red; */
+    width: 80%;
+    border-radius: 1em;
+  }
+  #slideshow {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -399,5 +564,18 @@ main .price {
   }
   .substitution.kids {
     margin-bottom: 0.5em;
+  }
+  .mySlides {
+    width: 100%; /* ensures full width on even smaller screens */
+  }
+  #slideshow {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .w3-button {
+    font-size: 1.5em; /* reduces size of navigation buttons on small screens */
   }
 }
