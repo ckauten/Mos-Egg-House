@@ -26,7 +26,7 @@ body::before {
 body {
   background: rgb(235, 176, 80);
   font-size: 16pt;
-  height: 100vh;
+  height: auto;
   width: 95vw;
   margin: auto;
   display: flex;
@@ -49,7 +49,6 @@ header {
   align-items: center;
   background: black;
   border-bottom: thin solid rgb(139, 35, 50);
-  /* margin-bottom: 0.25em; */
   color: white;
   overflow: hidden;
 }
@@ -57,14 +56,10 @@ header {
   width: 100vw;
   position: absolute;
   clear: both;
-  /* border: solid thin rgb(139, 35, 50);
-  border-bottom: none; */
-  /* filter: brightness(95%); */
   height: 10em;
 }
 
 .header-button {
-  /* border: thin solid rgb(139, 35, 50); */
   padding: 1em;
 }
 
@@ -89,7 +84,6 @@ nav ul {
   border-bottom: thin solid rgb(139, 35, 50);
   z-index: 1;
   filter: brightness(88%);
-  /* margin-bottom: 0.25em; */
 }
 
 nav li {
@@ -129,14 +123,12 @@ main {
   padding: 0;
   list-style: none;
   max-width: 60em;
-
   flex-wrap: nowrap;
   overflow-x: auto;
   border: solid thin rgb(139, 35, 50);
   border-radius: 1em;
   padding: 0.5em 0.25em;
   background: rgba(0, 0, 0, 0.2);
-  /* scrollbar-width: thick; */
   scrollbar-color: rgba(139, 35, 50, 0.7) rgba(0, 0, 0, 0);
 }
 
@@ -213,14 +205,12 @@ main ul {
   padding-left: 0em;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
 }
 
 main li {
   width: 33%;
-  /* border-bottom: thin solid rgb(139, 35, 50); */
   margin: 0 1em;
 }
 .menu-buttons {
@@ -230,14 +220,10 @@ main li {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
 }
 .side {
   font-size: 1em;
   margin-bottom: 0.5em;
-  /* display: flex;
-  justify-content: center; */
 }
 main h4 {
   font-size: 1.25em;
@@ -256,7 +242,6 @@ main .price {
 
 #dropdown-toggle {
   display: flex;
-  /* justify-content: center; */
   align-self: center;
   position: relative;
   padding-left: 0.5em;
@@ -289,12 +274,12 @@ main .price {
   margin: 1em 0;
 }
 #slideshow {
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 #slideshow img {
   border-radius: 1em;
@@ -302,6 +287,7 @@ main .price {
 .mySlides {
   max-width: 100%;
   height: auto;
+  max-height: 20em;
   display: none;
 }
 .w3-button {
@@ -360,7 +346,6 @@ main .price {
   align-items: baseline;
 }
 
-/* border, padding, margin, width */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -427,7 +412,6 @@ main .price {
   appearance: radio;
 }
 
-/* address, locale */
 #fs-frm fieldset.locale input[name='city'],
 #fs-frm fieldset.locale select[name='state'],
 #fs-frm fieldset.locale input[name='postal-code'] {
@@ -445,7 +429,6 @@ main .price {
   margin-right: 3%;
 }
 form {
-  /* border: solid thin red; */
   width: 40em;
   border-radius: 1em;
 }
@@ -460,6 +443,12 @@ form {
   padding: 0.5em 0.75em;
   border-radius: 0.5em;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 1750) {
+  .w3-button {
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 1680px) {
@@ -485,7 +474,7 @@ form {
     border: none;
   }
   .menu-nav ul li {
-    display: inline-block; /* Ensures items stay in line */
+    display: inline-block;
     white-space: normal;
   }
   .menu-nav ul li a {
@@ -504,7 +493,6 @@ form {
     display: none;
   }
   form {
-    /* border: solid thin red; */
     width: 80%;
     border-radius: 1em;
   }
@@ -540,13 +528,13 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    overflow-x: auto; /* Allows horizontal scrolling */
-    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    overflow-x: auto;
+    white-space: nowrap;
     padding: 0;
     margin: 0;
   }
   .menu-nav ul li {
-    display: inline-block; /* Ensures items stay in line */
+    display: inline-block;
     white-space: normal;
   }
   .menu-nav ul li a {
@@ -566,16 +554,12 @@ form {
     margin-bottom: 0.5em;
   }
   .mySlides {
-    width: 100%; /* ensures full width on even smaller screens */
+    width: 100%;
   }
   #slideshow {
     width: 90%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-
-  .w3-button {
-    font-size: 1.5em; /* reduces size of navigation buttons on small screens */
   }
 }
