@@ -467,7 +467,7 @@ form {
 }
 #index-main #contact-info {
   margin-top: 0.5em;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-self: center;
   justify-content: flex-end;
@@ -559,6 +559,9 @@ form {
   }
 }
 @media screen and (max-width: 1500px) {
+  /* #index-main #contact-info {
+    display: flex;
+  } */
   #chicken {
     width: 30em;
   }
@@ -625,6 +628,11 @@ form {
 }
 
 @media screen and (max-width: 880px) {
+  body,
+  html {
+    height: 100vh;
+    overflow: hidden;
+  }
   #chicken {
     width: 30em;
   }
@@ -660,6 +668,9 @@ form {
     padding: 0.5em;
     font-size: 0.75em;
   }
+  #tagLine {
+    transform: translateY(-5em);
+  }
 }
 @media screen and (max-width: 780px) {
   #chicken {
@@ -685,14 +696,12 @@ form {
   #index-main {
     padding-top: 15em;
   }
+  #tagLine {
+    transform: translateY(-7em);
+  }
 }
 
 @media screen and (max-width: 680px) {
-  body,
-  html {
-    height: 100vh;
-    overflow: hidden;
-  }
   nav {
     font-size: 1em;
   }
@@ -781,5 +790,8 @@ form {
   #mainThing {
     font-size: 1.5em;
     transform: translateY(-0.5em);
+  }
+  #tagLine {
+    transform: translateY(-6.9em);
   }
 }
