@@ -471,8 +471,8 @@ form {
 #menu-button {
   position: relative;
   /* top: 37.8em; */
-  left: 9em;
-  transform: translateY(-90%);
+  /* left: 9em; */
+  transform: translateY(-6em);
   padding: 1em;
   background: rgba(139, 35, 50, 0.95);
   border-radius: 1em;
