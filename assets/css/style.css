@@ -694,7 +694,7 @@ form {
 @media screen and (max-width: 780px) {
   #index-body {
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
   }
   #chicken {
     display: none;
