@@ -38,7 +38,8 @@ body {
 #logo {
   width: 35em;
   height: auto;
-  margin-top: 2em;
+  margin: 2em auto 0 auto;
+  transform: translateX(1em);
 }
 #index-logo {
   height: 35em;
