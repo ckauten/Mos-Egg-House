@@ -552,7 +552,7 @@ form {
 /* 1111 */
 #index-body {
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 @media screen and (max-width: 1750) {
   .w3-button {
@@ -560,7 +560,7 @@ form {
   }
   #index-body {
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
   }
 }
 
