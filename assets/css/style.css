@@ -583,11 +583,14 @@ form {
   #tagLine {
     transform: translateY(-8em);
   }
-  /* .fa-facebook-f {
+  .fa-facebook-f {
     transform: translateY(-10em);
-  } */
+  }
 }
 @media screen and (max-width: 1350px) {
+  #tagLine {
+    transform: translateY(0em);
+  }
   .header-button {
     display: none;
   }
