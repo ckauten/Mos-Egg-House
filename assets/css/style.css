@@ -540,6 +540,17 @@ form {
     font-size: 2.5em;
   }
 }
+@media screen and (max-width: 1500px) {
+  #chicken {
+    width: 30em;
+  }
+  .menu-button {
+    transform: translateY(-13em);
+  }
+  #index-main #contact-info {
+    margin-top: -10em;
+  }
+}
 @media screen and (max-width: 1350px) {
   .header-button {
     display: none;
