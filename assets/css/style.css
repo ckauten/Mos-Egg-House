@@ -481,11 +481,9 @@ form {
 
 .menu-button {
   position: relative;
-  /* top: 37.8em; */
-  /* left: 9em; */
   transform: translateY(-6em);
   padding: 1em;
-  background: rgba(139, 35, 50, 0.95);
+  background: linear-gradient(to right, rgba(139, 35, 50, 0.95), rgba(139, 45, 50, 0.75));
   border-radius: 1em;
   color: white;
   font-family: lemonada;
@@ -493,8 +491,9 @@ form {
 }
 
 .menu-button:hover {
-  background: rgba(139, 35, 50, 0.85);
+  background: linear-gradient(to right, rgba(139, 35, 50, 0.75), rgba(139, 45, 50, 0.75));
   color: rgb(235, 176, 80);
+  cursor: pointer;
 }
 
 #button-holder {
