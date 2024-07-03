@@ -483,7 +483,7 @@ form {
   position: relative;
   transform: translateY(-6em);
   padding: 1em;
-  background: linear-gradient(to right, rgba(139, 35, 50, 0.95), rgba(139, 45, 50, 0.75));
+  background: linear-gradient(to left, rgba(139, 35, 50, 0.95), rgba(139, 45, 50, 0.75));
   border-radius: 1em;
   color: white;
   font-family: lemonada;
