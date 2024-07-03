@@ -554,6 +554,7 @@ form {
   height: 100vh;
   overflow: auto;
 }
+
 @media screen and (max-width: 1750) {
   .w3-button {
     position: absolute;
@@ -658,7 +659,7 @@ form {
 
 @media screen and (max-width: 880px) {
   #navUL {
-    overflow: auto;
+    overflow: scroll;
   }
   #chicken {
     width: 30em;
