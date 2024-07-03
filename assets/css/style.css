@@ -551,6 +551,10 @@ form {
   .w3-button {
     position: absolute;
   }
+  #index-body {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 1680px) {
@@ -634,11 +638,6 @@ form {
 }
 
 @media screen and (max-width: 880px) {
-  body,
-  html {
-    height: 100vh;
-    overflow: hidden;
-  }
   #chicken {
     width: 30em;
   }
