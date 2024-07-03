@@ -496,6 +496,10 @@ form {
   background: rgba(139, 35, 50, 0.85);
   color: rgb(235, 176, 80);
 }
+
+#button-holder {
+  transform: translateY(-2.2em);
+}
 #index-main {
   display: flex;
   height: auto;
@@ -592,6 +596,12 @@ form {
 @media screen and (max-width: 880px) {
   #chicken {
     width: 30em;
+  }
+  .menu-button {
+    transform: translateY(-13em);
+  }
+  #index-main #contact-info {
+    margin-top: -15em;
   }
   form {
     width: 80%;
