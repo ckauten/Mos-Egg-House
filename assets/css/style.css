@@ -539,7 +539,7 @@ form {
   display: none;
 }
 #mainThing {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 #tagLine {
   font-family: 'lemonada';
@@ -656,6 +656,9 @@ form {
     padding: 0.5em;
     font-size: 0.75em;
   }
+  .fa-facebook-f {
+    display: none;
+  }
 }
 @media screen and (max-width: 780px) {
   #chicken {
@@ -684,6 +687,11 @@ form {
 }
 
 @media screen and (max-width: 680px) {
+  body,
+  html {
+    height: 100vh;
+    overflow: hidden;
+  }
   nav {
     font-size: 1em;
   }
@@ -754,14 +762,14 @@ form {
     font-size: 1em;
   }
   #button-holder {
-    transform: translateY(-20em);
+    transform: translateY(-20.5em);
   }
   #index-main {
     padding-top: 15em;
   }
   #no-text {
     display: flex;
-    transform: translateY(-18em);
+    transform: translateY(-19em);
   }
   .hours {
     font-size: 1em;
@@ -769,7 +777,8 @@ form {
     text-decoration: none;
     margin-top: 0.5em;
   }
-  .fa-facebook-f {
-    display: none;
+  #mainThing {
+    font-size: 1.5em;
+    transform: translateY(-0.5em);
   }
 }
