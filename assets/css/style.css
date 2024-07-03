@@ -535,6 +535,17 @@ form {
 #no-text {
   display: none;
 }
+.hours {
+  display: none;
+}
+#mainThing {
+  font-size: 1.5em;
+}
+#tagLine {
+  font-family: 'lemonada';
+  color: rgb(139, 35, 50);
+  font-size: 1.25em;
+}
 @media screen and (max-width: 1750) {
   .w3-button {
     position: absolute;
@@ -567,6 +578,13 @@ form {
 @media screen and (max-width: 1350px) {
   .header-button {
     display: none;
+  }
+  .hours {
+    display: flex;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    margin: 0.5em auto;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -749,9 +767,9 @@ form {
     font-size: 1em;
     color: black;
     text-decoration: none;
+    margin-top: 0.5em;
   }
-  /* .fa-facebook-f {
+  .fa-facebook-f {
     display: none;
   }
-} */
 }
