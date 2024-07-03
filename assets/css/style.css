@@ -36,11 +36,12 @@ body {
   z-index: 1;
 }
 #logo {
-  height: 15em;
+  width: 35em;
+  height: auto;
   margin-top: 2em;
 }
 #index-logo {
-  height: 15em;
+  height: 35em;
   margin-top: 2em;
   display: none;
 }
@@ -488,6 +489,7 @@ form {
   color: white;
   font-family: lemonada;
   margin-bottom: 1em;
+  /* margin-left: 2.5em; */
 }
 
 .menu-button:hover {
@@ -530,6 +532,9 @@ form {
   color: rgb(139, 35, 50);
   font-size: 2.5em;
 }
+#no-text {
+  display: none;
+}
 @media screen and (max-width: 1750) {
   .w3-button {
     position: absolute;
@@ -547,13 +552,16 @@ form {
   }
   .menu-button {
     padding: 0.75em;
+    margin-left: 2.5em;
+    margin-right: 0.75em;
   }
   #index-main #contact-info {
-    margin-top: -10em;
+    margin-top: -8em;
   }
+
   #button-holder {
     transform: translateY(-11.5em);
-    margin-left: 1.5em;
+    /* margin-left: 1.5em; */
   }
 }
 @media screen and (max-width: 1350px) {
@@ -641,6 +649,20 @@ form {
   #_blank {
     display: none;
   }
+  #no-text {
+    display: flex;
+    transform: translateY(-17em);
+  }
+  .menu-button {
+    margin: 0.5em;
+    font-size: 1em;
+  }
+  #button-holder {
+    transform: translateY(-20em);
+  }
+  #index-main {
+    padding-top: 15em;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -702,5 +724,25 @@ form {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+  }
+  header {
+    height: 5em;
+  }
+  #index-logo {
+    margin-bottom: 1em;
+  }
+  .menu-button {
+    margin: 0.5em;
+    font-size: 1em;
+  }
+  #button-holder {
+    transform: translateY(-20em);
+  }
+  #index-main {
+    padding-top: 15em;
+  }
+  #no-text {
+    display: flex;
+    transform: translateY(-18em);
   }
 }
