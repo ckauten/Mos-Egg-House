@@ -745,4 +745,13 @@ form {
     display: flex;
     transform: translateY(-18em);
   }
+  .hours {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+  }
+  /* .fa-facebook-f {
+    display: none;
+  }
+} */
 }
