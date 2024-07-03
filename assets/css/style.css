@@ -491,7 +491,7 @@ form {
   justify-content: center;
   align-items: center;
   /* width: 60rem; */
-  border: solid thin rgb(139, 35, 50);
+  /* border: solid thin rgb(139, 35, 50); */
   text-align: center;
   padding-top: 30em;
 }
@@ -527,6 +527,11 @@ form {
     font-size: 2.5em;
   }
 }
+@media screen and (max-width: 1350px) {
+  .header-button {
+    display: none;
+  }
+}
 @media screen and (max-width: 1000px) {
   .mySlides {
     width: 100%;
@@ -559,11 +564,7 @@ form {
     white-space: nowrap;
   }
 }
-@media screen and (max-width: 1350px) {
-  .header-button {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 880px) {
   #chicken {
     width: 30em;
@@ -576,6 +577,9 @@ form {
     width: 80%;
     justify-content: center;
     align-items: center;
+  }
+  #menu-button {
+    transform: translateY(-15em);
   }
 }
 @media screen and (max-width: 800px) {
