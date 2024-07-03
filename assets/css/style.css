@@ -828,4 +828,8 @@ form {
   #tagLine {
     transform: translateY(-7.5em);
   }
+  body .fa-facebook-f {
+    display: block;
+    margin-top: 1em;
+  }
 }
