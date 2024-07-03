@@ -692,9 +692,15 @@ form {
   }
 }
 @media screen and (max-width: 780px) {
+  .top-bar {
+    position: fixed;
+  }
   #index-body {
     height: 100vh;
     overflow: auto;
+  }
+  #no-text {
+    z-index: -1;
   }
   #chicken {
     display: none;
