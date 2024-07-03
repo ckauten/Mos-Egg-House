@@ -465,7 +465,7 @@ form {
   scale: 1.1;
 }
 #index-main #contact-info {
-  margin-top: -5em;
+  margin-top: 0.5em;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -506,8 +506,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 60rem; */
-  /* border: solid thin rgb(139, 35, 50); */
   text-align: center;
   padding-top: 30em;
 }
@@ -549,10 +547,14 @@ form {
     width: 30em;
   }
   .menu-button {
-    transform: translateY(-13em);
+    padding: 0.75em;
   }
   #index-main #contact-info {
-    margin-top: -10em;
+    margin-top: -8em;
+  }
+  #button-holder {
+    transform: translateY(-11.5em);
+    margin-left: 1.5em;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -600,9 +602,7 @@ form {
   .menu-button {
     transform: translateY(-13em);
   }
-  #index-main #contact-info {
-    margin-top: -15em;
-  }
+
   form {
     width: 80%;
     border-radius: 1em;
@@ -619,6 +619,17 @@ form {
 @media screen and (max-width: 800px) {
   #chicken {
     width: 25em;
+  }
+  #index-main #contact-info {
+    transform: translateY(-8em);
+  }
+  #button-holder {
+    transform: translateY(-18.5em);
+    font-size: 0.9em;
+  }
+  .menu-button {
+    padding: 0.5em;
+    font-size: 0.75em;
   }
 }
 @media screen and (max-width: 780px) {
