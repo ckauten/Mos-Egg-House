@@ -803,4 +803,8 @@ form {
   #tagLine {
     transform: translateY(-6.9em);
   }
+  #index-body {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
