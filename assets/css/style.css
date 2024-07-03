@@ -545,6 +545,7 @@ form {
   font-family: 'lemonada';
   color: rgb(139, 35, 50);
   font-size: 1.25em;
+  margin-top: 0.5em;
 }
 @media screen and (max-width: 1750) {
   .w3-button {
@@ -585,6 +586,9 @@ form {
     color: black;
     text-decoration: none;
     margin: 0.5em auto;
+  }
+  body .fa-facebook-f {
+    display: none;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -655,9 +659,6 @@ form {
   .menu-button {
     padding: 0.5em;
     font-size: 0.75em;
-  }
-  body .fa-facebook-f {
-    display: none;
   }
 }
 @media screen and (max-width: 780px) {
