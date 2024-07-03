@@ -559,9 +559,6 @@ form {
   }
 }
 @media screen and (max-width: 1500px) {
-  /* #index-main #contact-info {
-    display: flex;
-  } */
   #chicken {
     width: 30em;
   }
@@ -578,6 +575,12 @@ form {
     transform: translateY(-11.5em);
     /* margin-left: 1.5em; */
   }
+  #tagLine {
+    transform: translateY(-8em);
+  }
+  .fa-facebook-f {
+    transform: translateY(-10em);
+  }
 }
 @media screen and (max-width: 1350px) {
   .header-button {
@@ -592,6 +595,9 @@ form {
   }
   body .fa-facebook-f {
     display: none;
+  }
+  #index-main #contact-info {
+    display: flex;
   }
 }
 @media screen and (max-width: 1000px) {
