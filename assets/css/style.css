@@ -682,6 +682,10 @@ form {
   }
 }
 @media screen and (max-width: 780px) {
+  #index-body {
+    height: 100vh;
+    overflow: hidden;
+  }
   #chicken {
     display: none;
   }
@@ -802,9 +806,5 @@ form {
   }
   #tagLine {
     transform: translateY(-6.9em);
-  }
-  #index-body {
-    height: 100vh;
-    overflow: hidden;
   }
 }
