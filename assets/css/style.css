@@ -735,6 +735,9 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 780px) {
+  ul li > a {
+    margin-left: 0em;
+  }
   .top-bar {
     position: fixed;
   }
