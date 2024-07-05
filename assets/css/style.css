@@ -524,8 +524,14 @@ form {
   width: 5em;
   visibility: hidden;
 }
+#chicken {
+  /* display: none; */
+}
 .forward {
   z-index: 50;
+}
+ul li > a {
+  margin-left: 1em;
 }
 
 #welcome {
