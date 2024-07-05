@@ -561,6 +561,30 @@ ul li > a {
   overflow: auto;
 }
 
+footer {
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1750) {
   .w3-button {
     position: absolute;
