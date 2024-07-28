@@ -261,13 +261,13 @@ main .price {
 }
 
 #dropdown-toggle {
-  display: flex;
+  display: none;
   align-self: center;
   position: relative;
   padding-left: 0.5em;
   font-size: 2em;
   cursor: pointer;
-  z-index: -1;
+  /* z-index: -1; */
 }
 #dropdown-toggle:hover {
   color: rgb(139, 35, 50);
