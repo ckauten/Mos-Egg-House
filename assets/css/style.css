@@ -782,6 +782,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 680px) {
+  #dropdown-toggle{
+    display: none;
+    }
   #index-main #contact-info {
     transform: translateY(-9.5em);
   }
